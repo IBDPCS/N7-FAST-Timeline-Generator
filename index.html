@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>N7 FAST Timeline Generator</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+
+	</script>
+	<script src="script.js">
+
+	</script>
+</head>
+
+<body>
+	<div>
+		<div class="container">
+			<div class="left">
+				<img src="n7-logo.svg" />
+      </div>
+      <div class="right"><h1>N7 Education</h1><p>N7 FAST Unit Timeline&nbsp
+      </div>
+    </div>
+      <p>
+        Enter units as:<br /> <strong>UnitTitle, NumberOfWeeks</strong></p>
+        
+      <textarea cols="77" rows="17" id="tasks">Sequences & Series,3
+Algebra & Function Basics,3
+Functions, Equations & Inequalities,3
+BREAK,2
+Exponential and Logarithmic Functions,3
+Trigonometric Functions & Equations,3
+Geometry & Trigonometry,3
+BREAK,3
+Differential Calculus Part 1,3.5
+Differential calculus Part 2,2.5
+Integral Calculus,3
+BREAK,2
+Statistics,5
+Probability ,3
+Probability Distributions,3</textarea><p>
+Start date (<strong>year-month-day</strong>)</p>
+<input type="text" id="startDate" name="startDate" value="2021-02-01"> 
+<br /><br />
+    <button class="button blue" type="button" onclick="parseInput()">Generate Timeline</button>
+    <br /><br />
+	  <div id="timeline"><p>Generate your timeline then take a screenshot for your reference</p></div>
+    <div id="n7"><p><a href="https://www.n7.education">www.n7.education</a></p>
+    </div>
+  </div>
+</body>
+</html>
